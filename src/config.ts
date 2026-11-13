@@ -7,9 +7,9 @@ import laporanAgen from './laporan.json';
 import type { GayaId } from './gaya/daftar';
 
 export const KANTOR = {
-  nama: 'Kantor AI',
+  nama: 'Gadai MAS',
   /** Baris kecil di bawah nama (mis. nama perusahaan). */
-  subjudul: 'Perusahaan Contoh',
+  subjudul: 'Digital Marketing Team',
 };
 
 /**
@@ -41,25 +41,24 @@ export interface Agen {
   z: number;
 }
 
-/** Enam agen. Tambah atau kurangi sesukamu (posisi meja jangan bertumpuk). */
+/** Lima agen tim Digital Marketing Gadai MAS (posisi meja jangan bertumpuk). */
 export const AGEN: Agen[] = [
-  { key: 'raka', nama: 'Raka', tugas: 'Cari tender', ruang: 'bizdev', warna: '#e4572e', x: -5.2, z: -1.4 },
-  { key: 'sekar', nama: 'Sekar', tugas: 'Cari klien', ruang: 'bizdev', warna: '#2a9d8f', x: -3.2, z: -1.4 },
-  { key: 'gilang', nama: 'Gilang', tugas: 'Riset pasar', ruang: 'bizdev', warna: '#8e6bd8', x: -4.2, z: 1.2 },
-  { key: 'riska', nama: 'Riska', tugas: 'Keuangan & email', ruang: 'keuangan', warna: '#f2b134', x: 0.6, z: -0.2 },
-  { key: 'esok', nama: 'Esok', tugas: 'Konsep acara', ruang: 'studio', warna: '#3a86ff', x: 3.6, z: -1.2 },
-  { key: 'lita', nama: 'Lita', tugas: 'Desain', ruang: 'studio', warna: '#ff5d8f', x: 5.4, z: 0.8 },
+  { key: 'yovin', nama: 'Yovin', tugas: 'Performance Marketer', ruang: 'bizdev', warna: '#e4572e', x: -5.2, z: -1.4 },
+  { key: 'zulfa', nama: 'Zulfa', tugas: 'CRM Specialist', ruang: 'bizdev', warna: '#2a9d8f', x: -3.2, z: 0.8 },
+  { key: 'hisyam', nama: 'Hisyam', tugas: 'Admin & Budget Control', ruang: 'keuangan', warna: '#f2b134', x: 0.6, z: -0.2 },
+  { key: 'leony', nama: 'Leony', tugas: 'Social Media Specialist', ruang: 'studio', warna: '#ff5d8f', x: 3.6, z: -1.2 },
+  { key: 'felly', nama: 'Felly', tugas: 'SEO Specialist', ruang: 'studio', warna: '#3a86ff', x: 5.4, z: 0.8 },
 ];
 
 export type Aktivitas = 'kerja' | 'laporan' | 'belajar';
 
 /** Jadwal kerja (WIB). `agen: '*'` = semua agen. `hari` 1 = Senin … 7 = Minggu. `menit` = lama tampil. */
 export const JADWAL: { agen: string[] | '*'; mulai: string; menit: number; hari: number[]; aktivitas: Aktivitas; label: string }[] = [
-  { agen: ['riska'], mulai: '07:32', menit: 25, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'merapikan email pagi…' },
-  { agen: ['raka'], mulai: '07:57', menit: 30, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'radar tender…' },
-  { agen: ['sekar'], mulai: '08:05', menit: 30, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'cari calon klien…' },
-  { agen: ['gilang'], mulai: '08:12', menit: 30, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'riset pasar…' },
-  { agen: ['riska'], mulai: '08:18', menit: 30, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'menyisir email lama…' },
+  { agen: ['hisyam'], mulai: '07:32', menit: 25, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'cek sisa budget iklan…' },
+  { agen: ['yovin'], mulai: '07:57', menit: 30, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'optimasi kampanye iklan…' },
+  { agen: ['leony'], mulai: '08:05', menit: 30, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'jadwalkan konten medsos…' },
+  { agen: ['felly'], mulai: '08:12', menit: 30, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'riset keyword…' },
+  { agen: ['zulfa'], mulai: '08:18', menit: 30, hari: [1, 2, 3, 4, 5], aktivitas: 'kerja', label: 'follow-up nasabah…' },
   { agen: '*', mulai: '15:42', menit: 25, hari: [1, 2, 3, 4, 5], aktivitas: 'laporan', label: 'menulis laporan harian…' },
   { agen: '*', mulai: '20:00', menit: 120, hari: [1, 2, 3, 4, 5, 6, 7], aktivitas: 'belajar', label: 'belajar malam…' },
 ];
