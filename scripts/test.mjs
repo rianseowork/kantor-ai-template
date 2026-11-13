@@ -14,14 +14,14 @@ const t = (name, fn) => {
   n++;
 };
 t('jadwal pagi, laporan, belajar, libur', () => {
-  assert.equal(O.agentDoing('raka', 1, '07:57').label, 'radar tender…');
-  assert.equal(O.agentDoing('riska', 1, '07:32').activity, 'kerja');
-  assert.equal(O.agentDoing('esok', 1, '15:50').activity, 'laporan');
-  assert.equal(O.agentDoing('lita', 6, '21:00').activity, 'belajar');
-  assert.equal(O.agentDoing('raka', 1, '10:00').activity, 'siaga');
-  assert.equal(O.agentDoing('raka', 1, '23:00').activity, 'pulang');
-  assert.equal(O.agentDoing('raka', 6, '07:57').activity, 'pulang');
-  assert.equal(O.agentDoing('raka', 6, '07:57', true).activity, 'kerja');
+  assert.equal(O.agentDoing('yovin', 1, '07:57').label, 'optimasi kampanye iklan…');
+  assert.equal(O.agentDoing('hisyam', 1, '07:32').activity, 'kerja');
+  assert.equal(O.agentDoing('leony', 1, '15:50').activity, 'laporan');
+  assert.equal(O.agentDoing('felly', 6, '21:00').activity, 'belajar');
+  assert.equal(O.agentDoing('yovin', 1, '10:00').activity, 'siaga');
+  assert.equal(O.agentDoing('yovin', 1, '23:00').activity, 'pulang');
+  assert.equal(O.agentDoing('yovin', 6, '07:57').activity, 'pulang');
+  assert.equal(O.agentDoing('yovin', 6, '07:57', true).activity, 'kerja');
 });
 t('timelapse tiga babak, berulang', () => {
   assert.equal(O.LAPSE_SECONDS, 30);
@@ -31,12 +31,12 @@ t('timelapse tiga babak, berulang', () => {
 });
 t('agen santai pergi dan kembali', () => {
   const seen = new Set();
-  for (let x = 0; x < 48; x += 0.5) seen.add(O.idleAt('raka', x).spot);
+  for (let x = 0; x < 48; x += 0.5) seen.add(O.idleAt('yovin', x).spot);
   assert.ok(seen.has('meja') && seen.size >= 3);
 });
 t('meja dan Mission Board', () => {
   const desks = O.officeDesks(1, '10:00');
-  assert.equal(desks.length, 6);
+  assert.equal(desks.length, 5);
   assert.ok(desks.every((d) => d.bubble));
   assert.ok(O.missionBoard(desks).items.length >= 4);
 });
