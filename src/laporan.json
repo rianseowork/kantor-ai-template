@@ -1,58 +1,61 @@
 {
-  "raka": {
-    "ringkasan": "Enam paket tender baru; dua cocok, satu Rakor Dinas Contoh sedang dikejar.",
+  "yovin": {
+    "ringkasan": "Tiga iklan dengan CTR rendah dijeda; satu kampanye baru siap tayang.",
     "menunggu": [
-      "Setujui batch email B012 (30 kontak)"
+      "Setujui kampanye promo gadai emas minggu ini"
     ],
     "angka": [
       {
-        "label": "Paket baru",
-        "nilai": "6 paket"
+        "label": "Iklan aktif",
+        "nilai": "8 iklan"
       }
     ]
   },
-  "sekar": {
-    "ringkasan": "Tiga kampus contoh membalas penawaran; satu minta sampel.",
+  "zulfa": {
+    "ringkasan": "45 nasabah di-follow-up; 12 jatuh tempo diingatkan via WhatsApp.",
     "menunggu": [
-      "Kirim sampel ke Kampus Contoh?"
+      "Kirim broadcast promo ke nasabah lama?"
     ],
     "angka": [
       {
-        "label": "Calon klien",
-        "nilai": "12 kontak"
+        "label": "Follow-up",
+        "nilai": "45 nasabah"
       }
     ]
   },
-  "gilang": {
-    "ringkasan": "Brief video Festival Contoh masuk; storyboard awal disiapkan.",
+  "hisyam": {
+    "ringkasan": "Laporan pemakaian budget mingguan selesai direkap.",
     "mendesak": [
-      "Tenggat penawaran Festival Contoh besok 10.00"
-    ]
-  },
-  "riska": {
-    "ringkasan": "212 email dirapikan; dua email phishing ditandai.",
-    "menunggu": [
-      "Periksa draf invoice termin 2"
+      "Budget iklan bulan ini hampir habis"
     ],
     "angka": [
       {
-        "label": "Email dilabel",
-        "nilai": "212 email"
+        "label": "Budget terpakai",
+        "nilai": "82%"
       }
     ]
   },
-  "esok": {
-    "ringkasan": "Tiga alternatif konsep Rakor Dinas Contoh selesai.",
+  "leony": {
+    "ringkasan": "7 konten minggu depan terjadwal; 2 Reels siap ditinjau.",
     "menunggu": [
-      "Pilih konsep Rakor Dinas Contoh"
-    ]
-  },
-  "lita": {
-    "ringkasan": "Deck 14 slide Festival Contoh siap ditinjau.",
+      "Pilih desain konten Reels promo"
+    ],
     "angka": [
       {
-        "label": "Desain selesai",
-        "nilai": "4 berkas"
+        "label": "Konten terjadwal",
+        "nilai": "7 konten"
+      }
+    ]
+  },
+  "felly": {
+    "ringkasan": "2 artikel blog dioptimasi; 15 keyword baru ditemukan.",
+    "menunggu": [
+      "Setujui topik artikel blog minggu depan"
+    ],
+    "angka": [
+      {
+        "label": "Keyword baru",
+        "nilai": "15 keyword"
       }
     ]
   }
